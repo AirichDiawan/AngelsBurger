@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="img/png" href="Images/logo3.png">
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/bebas" type="text/css"/>
+	<link rel="stylesheet" type="text/css" href="Main-Stylesheet.css">
+	<title>Angel's Burger</title>
+</head>
+<body>
+	<img id="image">
+	<nav id="navbar" class="navbar">
+		<a href="#image"><img class="navbar-logo" src="Images/logo.png"></a>
+		<a href="#image">Home</a>
+		<a href="#footer">Contact Us</a>
+	</nav>
+	<section id="head">	
+		<div class="header-content">
+		</div>
+	</section>
+	<section id="body">
+		<p class="must-try" style="text-shadow: 3px 3px 4px #000000;">Must Try!</p>
+		<div class="container-body">
+			<div class="tabs" id="tab">
+				<button class="btn active" data-target-tab="Popular" onclick="">Popular</button>
+				<button class="btn" data-target-tab="#html" onclick="">Burgers</button>
+				<button class="btn" data-target-tab="#html" onclick="">Combos</button>
+				<button class="btn" data-target-tab="#html" onclick="">Drinks</button>
+				<button class="btn" data-target-tab="#html" onclick="">Desserts</buttonbutton>
+				<button class="btn" data-target-tab="#html" onclick="">Limited</button>
+			</div>
+			<div class="content" id="#Popular">
+				<div class="container1" id="b1">
+					<div class="BurgerSlides">
+						<img src="Images/Double-Beef-Burger.jpg">
+						<div class="overlay">
+							<a href="#" class="icon" title="add to cart"><img src="Images/cart-v2-yellow.png" style="width: 125px; height:100px;"></a>
+						</div>
+					</div>
+					<div class="BurgerSlides">
+						<img src="Images/Cheesy-Burger.png">
+						<div class="overlay">
+							<a href="#" class="icon" title="add to cart"><img src="Images/cart-v2-yellow.png" style="width: 125px; height:100px;"></a>
+						</div>
+					</div>
+					<div class="BurgerSlides">
+						<img src="Images/Overload-Burger.png">
+						<div class="overlay">
+							<a href="#" class="icon" title="add to cart"><img src="Images/cart-v2-yellow.png" style="width: 125px; height:100px;"></a>
+						</div>
+					</div>
+					<div class="BurgerSlides">
+						<img src="Images/Twin-Burger.jpg">
+						<div class="overlay">
+							<a href="#" class="icon" title="add to cart"><img src="Images/cart-v2-yellow.png" style="width: 125px; height:100px;"></a>
+						</div>
+					</div>
+						<div class="BurgerSlides">
+						<img src="Images/Double-Chicken-Burger.png">
+						<div class="overlay">
+							<a href="#" class="icon" title="add to cart"><img src="Images/cart-v2-yellow.png" style="width: 125px; height:100px;"></a>
+						</div>
+					</div>
+					<div class="BurgerSlides">
+						<img src="Images/Bacon-Burger.png">
+						<div class="overlay">
+							<a href="#" class="icon" title="add to cart"><img src="Images/cart-v2-yellow.png" style="width: 125px; height:100px;"></a>
+						</div>
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1)">❮</a>
+					<a class="next" onclick="plusSlides(1)">❯</a>
+
+					<div class="container-caption">
+						<p id="caption"></p>
+					</div>
+				
+					<div class="row">
+						<div class="column">
+							<img class="demo cursor" src="Images/Double-Beef-Burger.jpg" onclick="currentSlide(1)" alt="Double Beef Burger">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="Images/Cheesy-Burger.png" onclick="currentSlide(2)" alt="Cheesy Burger">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="Images/Overload-Burger.png" onclick="currentSlide(3)" alt="Burger Overload">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="Images/Twin-Burger.jpg" onclick="currentSlide(4)" alt="Twin Burger">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="Images/Double-Chicken-Burger.png" onclick="currentSlide(5)" alt="Double Chicken Burger">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="Images/Bacon-Burger.png" onclick="currentSlide(6)" alt="Bacon Burger">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="footer">
+		<div class="container-footer">
+			<div class="about-footer">
+				<img class="footer-logo" src="Images/logo.png">
+				<p><br>Angel's Burger was established in 1997 and is one of the most popular food kiosks in the country with over a thousand branches nationwide. It is known for their delicious and inexpensive buy-one-take-one burgers.</p>
+				<img class="footer-icon" src="Images/fb-icon.png">
+				<img class="footer-icon" src="Images/ig-icon.png">
+				<img class="footer-icon" src="Images/tg-icon.png">
+				<img class="footer-icon" src="Images/tw-icon.png">
+			</div>
+			<div class="contact-footer">
+				<p class="contact-title">Contact us</p>
+				<p class="contact-subtitle"><br>Address: Metro Manila Philippines<br>Contact Number: +1234 567 8910<br>Email: angelsburgersupport@gmail.com</p>
+			</div>
+		</div>
+		<div class="line"></div>
+		<div class="terms-footer">
+			<a href="#">Terms of Service</a>
+		</div>
+	</section>
+	<script src="Navbar.js"></script>
+	<script src="SlideShow.js"></script>
+	<script src="Button.js"></script>
+	<script src="MenuBox.js"></script>
+</body>
+</html>
